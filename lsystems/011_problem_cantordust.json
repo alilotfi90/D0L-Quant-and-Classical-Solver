@@ -1,0 +1,13 @@
+{
+  "alphabet": [
+    "A",
+    "B"
+  ],
+  "known_symbols": [],
+  "axiom": "A",
+  "generations": "*",
+  "production_rules": {
+    "A": "ABA",
+    "B": "BBB"
+  }
+}

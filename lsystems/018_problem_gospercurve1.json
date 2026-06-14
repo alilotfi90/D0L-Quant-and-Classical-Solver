@@ -1,0 +1,18 @@
+{
+  "alphabet": [
+    "A",
+    "B",
+    "+",
+    "-"
+  ],
+  "known_symbols": [
+    "+",
+    "-"
+  ],
+  "axiom": "A",
+  "generations": "*",
+  "production_rules": {
+    "A": "A+B++B-A--AA-B+",
+    "B": "-A+BB++B+A--A-B"
+  }
+}

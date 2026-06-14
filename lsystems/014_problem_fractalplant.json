@@ -1,0 +1,22 @@
+{
+  "alphabet": [
+    "F",
+    "X",
+    "-",
+    "[",
+    "]",
+    "+"
+  ],
+  "known_symbols": [
+    "-",
+    "[",
+    "]",
+    "+"
+  ],
+  "axiom": "X",
+  "generations": "*",
+  "production_rules": {
+    "X": "F-[[X]+X]+F[+FX]-X",
+    "F": "FF"
+  }
+}

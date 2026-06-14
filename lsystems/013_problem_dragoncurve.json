@@ -1,0 +1,20 @@
+{
+  "alphabet": [
+    "X",
+    "Y",
+    "F",
+    "+",
+    "-"
+  ],
+  "known_symbols": [
+    "F",
+    "+",
+    "-"
+  ],
+  "axiom": "FX",
+  "generations": "*",
+  "production_rules": {
+    "X": "X+YF+",
+    "Y": "-FX-Y"
+  }
+}

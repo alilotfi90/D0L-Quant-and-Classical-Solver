@@ -1,0 +1,8 @@
+label,n,edges,max_clique,max_degree,depth,ratio
+worked example,8,24,4,6,6,4.0
+"Herpopteros, m=2",33,495,16,31,42,11.785714285714286
+"algae, m=3",42,635,21,35,45,14.11111111111111
+"Cantor dust, m=2",76,2679,55,73,94,28.5
+"Pythagoras tree, m=2",157,10001,120,141,205,48.78536585365854
+"dragon curve, m=2",258,16594,120,228,228,72.78070175438596
+"Sierpinski triangle, m=2",1072,318141,351,709,1040,305.9048076923077

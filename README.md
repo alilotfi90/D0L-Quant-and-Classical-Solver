@@ -1,24 +1,57 @@
-# D0L-Quant-and-Classical-Solver
+# D0L-System Inference via a Characteristic Graph (classical + QAOA)
 
-This project implements both quantum and classical approaches to solve the D0L-system inference problem using characteristic graphs.
-The quantum implementation utilizes QAOA (Quantum Approximate Optimization Algorithm) while the classical approach uses a Maximum Independent Set (MIS) solver.
+Code and benchmarks accompanying the paper on reducing deterministic L-system (D0L)
+inference to Maximum Independent Set via a characteristic graph, with an exact classical
+decision procedure and a small-instance QAOA proof-of-concept.
 
-Overview
-D0L-systems are a type of L-system where the production rules are context-free and deterministic. The inference problem involves finding the production rules given a sequence of strings. 
-This implementation:
+## Requirements
 
-Constructs characteristic graphs from input sequences
-Solves the inference problem using:
+- Python 3.9+
+- `numpy`, `scipy` (see `requirements.txt`)
 
-1- Quantum approach (QAOA)
-2- Classical approach (MIS-based solver)
+No Qiskit, IBM Quantum account, or quantum hardware is required: the QAOA results are
+produced by a local statevector simulation written in NumPy and run entirely on the CPU.
 
-Requirements: 
-a) Qiskit
-b) Numpy
-c) Matplotlib
-d) Networkx
+```bash
+pip install -r requirements.txt
+```
 
-bash: pip install qiskit qiskit-ibm-runtime qiskit-algorithms qiskit-optimization numpy matplotlib networkx
+## Contents
 
-Authors: Ali Lotfi, Ian McQuillan, Steven Rayan
+- `merged_d0l_experiments.py` — characteristic-graph construction, the exact classical
+  decision procedure, negative controls, graph statistics, and the gate-count/depth table.
+- `run_qaoa_cases.py` — local statevector QAOA runner for the small diagnostic instances.
+- `lsystems/` — 22 JSON D0L benchmark systems used to generate the string sequences.
+- `results/` — CSV/JSON/LaTeX outputs reproduced by the scripts.
+
+## Reproducing the classical experiments
+
+```bash
+python merged_d0l_experiments.py --lsystems-dir lsystems --out-dir results
+```
+
+Expected headline results: **22/22** positive traces validated and **8/8** incompatible
+controls rejected, plus the gate-count-versus-depth table.
+
+## Reproducing the QAOA diagnostics
+
+```bash
+python run_qaoa_cases.py --lsystems-dir lsystems --out-dir results
+```
+
+If the combined run is slow on a given machine, run the four cases independently:
+
+```bash
+python run_qaoa_cases.py --lsystems-dir lsystems --out-dir results --case 0 --case-out results/qaoa_case_0.json
+python run_qaoa_cases.py --lsystems-dir lsystems --out-dir results --case 1 --case-out results/qaoa_case_1.json
+python run_qaoa_cases.py --lsystems-dir lsystems --out-dir results --case 2 --case-out results/qaoa_case_2.json
+python run_qaoa_cases.py --lsystems-dir lsystems --out-dir results --case 3 --case-out results/qaoa_case_3.json
+```
+
+The parameter search is a seeded multi-start local search and is a diagnostic protocol, not
+a scalable training method. The QAOA table is a small noiseless sanity check; it is **not**
+evidence of quantum advantage over exact classical MIS/SAT/CP solvers.
+
+## Citation
+
+Please cite the accompanying paper once published.

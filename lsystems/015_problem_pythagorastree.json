@@ -1,0 +1,18 @@
+{
+  "alphabet": [
+    "0",
+    "1",
+    "[",
+    "]"
+  ],
+  "known_symbols": [
+    "[",
+    "]"
+  ],
+  "axiom": "0",
+  "generations": "*",
+  "production_rules": {
+    "1": "11",
+    "0": "1[0]0"
+  }
+}

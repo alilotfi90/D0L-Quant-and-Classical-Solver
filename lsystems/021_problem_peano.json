@@ -1,0 +1,20 @@
+{
+  "alphabet": [
+    "L",
+    "R",
+    "F",
+    "+",
+    "-"
+  ],
+  "known_symbols": [
+    "F",
+    "+",
+    "-"
+  ],
+  "axiom": "L",
+  "generations": "*",
+  "production_rules": {
+    "L": "L+F+R-F-L+F+R-F-L-F-R+F+L-F-R-F-L+F+R-F-L-F-R-F-L+F+R+F+L+F+R-F-L+F+R+F+L-R-F+F+L+F+R-F-L+F+R-F-L",
+    "R": "R-F-L+F+R-F-L+F+R+F+L-F-R+F+L+F+R-F-L+F+R+F+L+F+R-F-L-F-R-F-L+F+R-F-L-F-R+F+L-F-R-F-L+F+R-F-L+F+R"
+  }
+}

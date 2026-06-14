@@ -1,0 +1,9 @@
+label,lengths,k,vertices,status,valid,decision
+"hand: (ab, ab, ba)",2-2-2,4,12,no-solution,False,no compatible D0L
+"hand: (abc, abc, cba)",3-3-3,6,36,no-solution,False,no compatible D0L
+"hand: (aa, ab)",2-2,2,6,no-solution,False,no compatible D0L
+"hand: (ab, abab, ab)",2-4-2,6,28,no-solution,False,no compatible D0L
+"hand: (abc, abcabc, abc)",3-6-3,9,90,no-solution,False,no compatible D0L
+algae corrupted,1-2-3-5,6,42,no-solution,False,no compatible D0L
+Cantor dust corrupted,1-3-9,4,76,no-solution,False,no compatible D0L
+dragon curve corrupted,2-6-14,8,256,no-solution,False,no compatible D0L

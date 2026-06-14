@@ -1,0 +1,18 @@
+{
+  "alphabet": [
+    "F",
+    "G",
+    "+",
+    "-"
+  ],
+  "known_symbols": [
+    "+",
+    "-"
+  ],
+  "axiom": "FGG",
+  "generations": "*",
+  "production_rules": {
+    "F": "F-G+F+G-F",
+    "G": "GG"
+  }
+}

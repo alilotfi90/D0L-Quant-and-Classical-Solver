@@ -1,0 +1,34 @@
+{
+  "alphabet": [
+    "A",
+    "B",
+    "S",
+    "C",
+    "U",
+    "[",
+    "]",
+    "+",
+    "-",
+    "/",
+    "f",
+    "F"
+  ],
+  "known_symbols": [
+    "[",
+    "]",
+    "+",
+    "-",
+    "/",
+    "f",
+    "F"
+  ],
+  "axiom": "A",
+  "generations": "*",
+  "production_rules": {
+    "B": "U[-S]U[-C]",
+    "A": "B/B/A",
+    "U": "ffFFFF",
+    "S": "FFFFFFFFF",
+    "C": "FfF[-FF]fF[-FF]fF[+FF]fF[+FF]fF[-FF]fF[-FF]fF"
+  }
+}

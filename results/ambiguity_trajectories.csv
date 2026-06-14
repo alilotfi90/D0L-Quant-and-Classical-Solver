@@ -1,0 +1,26 @@
+system,m,lengths,compatible_count,status
+algae,1,1-2,1,success
+algae,2,1-2-3,1,success
+algae,3,1-2-3-5,1,success
+algae,4,1-2-3-5-8,1,success
+algae,5,1-2-3-5-8-13,1,success
+Cantor dust,1,1-3,1,success
+Cantor dust,2,1-3-9,1,success
+Cantor dust,3,1-3-9-27,1,success
+Cantor dust,4,1-3-9-27-81,1,success
+Cantor dust,5,1-3-9-27-81-243,1,success
+dragon curve,1,2-6,1,success
+dragon curve,2,2-6-14,1,success
+dragon curve,3,2-6-14-30,1,success
+dragon curve,4,2-6-14-30-62,1,success
+dragon curve,5,2-6-14-30-62-126,1,success
+Dipterosiphonia II,1,1-5,1,success
+Dipterosiphonia II,2,1-5-27,1,success
+Dipterosiphonia II,3,1-5-27-173,1,success
+Dipterosiphonia II,4,1-5-27-173-319,1,success
+Dipterosiphonia II,5,1-5-27-173-319-465,1,success
+Herposiphonia,1,1-6,1,success
+Herposiphonia,2,1-6-49,1,success
+Herposiphonia,3,1-6-49-330,1,success
+Herposiphonia,4,1-6-49-330-611,1,success
+Herposiphonia,5,1-6-49-330-611-892,1,success
